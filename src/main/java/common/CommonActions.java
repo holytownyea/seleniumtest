@@ -19,7 +19,7 @@ public class CommonActions {
             case "CHROME_WINDOWS":
                 //System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                driver = new ChromeDriver();
                 break;
             case "MOZILLA_WINDOWS":
                 //System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");

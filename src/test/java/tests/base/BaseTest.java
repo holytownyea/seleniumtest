@@ -30,7 +30,7 @@ public class BaseTest {
     static {
         LOGGER.info("START TIME:" + LocalTime.now());
         LOGGER.info("Start clear reports dir: build/reports ...");
-        File allureResults = new File("allure-results");
+        File allureResults = new File("allure-results/");
         if (allureResults.isDirectory()) {
             for (File item : Objects.requireNonNull(allureResults.listFiles()))
                 item.delete();
